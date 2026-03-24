@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freddie Parton | Navigator</title>
+  <!-- Google Fonts for clean typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* --- Basic Reset --- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #0B2545; background: #F5F7FA; }
+
+    /* --- Container --- */
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+
+    /* --- Hero Section --- */
+    header { text-align: center; padding: 4rem 1rem; background: #0B2545; color: white; }
+    header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.25rem; color: #2C7BE5; margin-bottom: 2rem; }
+
+    nav { text-align: center; margin-bottom: 3rem; background: #0B2545; padding: 1rem; }
+    nav a { margin: 0 1rem; text-decoration: none; font-weight: 600; color: white; transition: color 0.3s; }
+    nav a:hover { color: #2C7BE5; }
+
+    /* --- Sections --- */
+    section { margin-bottom: 4rem; padding: 2rem 0; }
+    section h2 { font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 2px solid #2C7BE5; display: inline-block; padding-bottom: 0.3rem; }
+
+    /* --- Featured Projects Grid --- */
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .project-card { background: white; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .project-card h3 { margin-bottom: 0.5rem; color: #0B2545; }
+    .project-card p { color: #555; }
+
+    /* --- Experience List --- */
+    .experience ul { list-style: none; }
+    .experience li { margin-bottom: 0.5rem; }
+
+    /* --- Contact Section --- */
+    .contact p { margin-bottom: 0.5rem; }
+    .contact a { color: #2C7BE5; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+
+    /* --- Footer --- */
+    footer { text-align: center; padding: 2rem 1rem; font-size: 0.9rem; color: #777; border-top: 1px solid #ddd; }
+
+    @media(max-width:600px){
+      header h1 { font-size: 2.2rem; }
+      nav a { display: block; margin: 0.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Freddie Parton</h1>
+    <p>Navigator | Meteorologist | Oceanographer | Data Scientist</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#yacht-racing">Yacht Racing</a>
+      <a href="#weather-forecasting">Weather Forecasting</a>
+      <a href="#data-analysis">Data Analysis</a>
+      <a href="#drift-energy">Drift Energy</a>
+      <a href="#projects">Featured Projects</a>
+      <a href="#experience">Racing Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- About Section -->
+    <section id="about">
+      <h2>About</h2>
+      <p>I am a professional yacht sailor specializing as a navigator, with expertise in meteorology, oceanography, and data science. As a top youth Laser sailor in France, I've held various positions on yachts and am seeking opportunities in SailGP, America's Cup, Vendee Globe teams, and professional sailing crews.</p>
+    </section>
+
+    <!-- Yacht Racing Section -->
+    <section id="yacht-racing">
+      <h2>Yacht Racing</h2>
+      <p>Detailing my experience in yacht racing, including navigation strategies, team coordination, and competitive achievements.</p>
+    </section>
+
+    <!-- Weather Forecasting Section -->
+    <section id="weather-forecasting">
+      <h2>Weather Forecasting</h2>
+      <p>My work in meteorological analysis, providing accurate weather predictions for optimal sailing routes and performance.</p>
+    </section>
+
+    <!-- Data Analysis Section -->
+    <section id="data-analysis">
+      <h2>Data Analysis</h2>
+      <p>Utilizing data science techniques to analyze sailing data, optimize performance, and inform strategic decisions.</p>
+    </section>
+
+    <!-- Drift Energy Section -->
+    <section id="drift-energy">
+      <h2>Drift Energy</h2>
+      <p>Involvement in Drift Energy, focusing on innovative solutions for sustainable sailing and energy in marine environments.</p>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>MetWind</h3>
+          <p>Current role in weather forecasting and routing for sailing.</p>
+        </div>
+        <div class="project-card">
+          <h3>Drift Energy</h3>
+          <p>Work on drift energy technologies and oceanographic applications.</p>
+        </div>
+        <div class="project-card">
+          <h3>Wind Shear Modelling</h3>
+          <p>MSc project on wind shear analysis for improved sailing predictions.</p>
+        </div>
+        <div class="project-card">
+          <h3>Oceanography Work</h3>
+          <p>Degree-level projects and research in oceanographic data and modeling.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Racing Experience Section -->
+    <section id="experience" class="experience">
+      <h2>Racing Experience</h2>
+      <ul>
+        <li>Top youth Laser sailor in France</li>
+        <li>Professional yacht navigation and crew roles</li>
+        <li>Experience in various sailing positions</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:partonfreddie@gmail.com">partonfreddie@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/frederick-parton-98117b244/" target="_blank">linkedin.com/in/frederick-parton-98117b244/</a></p>
+      <p><a href="resume.pdf" download>Download Resume</a></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2026 Freddie Parton. All rights reserved.
+  </footer>
+
+</body>
+</html>
