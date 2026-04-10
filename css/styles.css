@@ -69,7 +69,7 @@ nav a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(15, 36, 96, 0.55);
+  background: rgba(15, 36, 96, 0.43);
 }
 
 .hero-content {
@@ -131,10 +131,83 @@ h4 {
   margin: 1rem 0;
 }
 
+.drift-hero-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto 1rem;
+}
+
+.drift-hero-image {
+  margin: 0;
+  height: 280px;
+  object-fit: cover;
+}
+
+.drift-logo-panel {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(160deg, #0f2460 0%, #1b3f9b 100%);
+  border: 1px solid rgba(0, 127, 255, 0.35);
+}
+
+.drift-logo-wordmark {
+  color: #ffffff;
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  line-height: 1;
+}
+
+.drift-logo-sub {
+  margin-top: 0.55rem;
+  color: #8fd0ff;
+  font-size: clamp(0.9rem, 1.6vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.42em;
+}
+
+.single-feature-image {
+  display: block;
+  max-width: 620px;
+  height: 250px;
+  object-fit: cover;
+  margin: 1rem auto 0;
+}
+
+.single-feature-figure {
+  margin: 0 0 1rem;
+}
+
+.single-feature-figure .image-caption {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 .image-grid {
   display: grid;
   gap: 1.25rem;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-bottom: 1rem;
+}
+
+.image-figure {
+  margin: 0;
+}
+
+.image-figure .section-image {
+  margin: 0;
+}
+
+.image-caption {
+  margin-top: 0;
+  font-size: 0.85rem;
+  color: #c8dcf5;
 }
 
 /* ===== CARDS ===== */
@@ -172,6 +245,21 @@ h4 {
   margin-bottom: 0;
   color: #66B2FF;
   font-size: 0.95rem;
+}
+
+@media (max-width: 760px) {
+  .drift-hero-media {
+    grid-template-columns: 1fr;
+  }
+
+  .drift-hero-image,
+  .drift-logo-panel {
+    height: 220px;
+  }
+
+  .single-feature-image {
+    height: 210px;
+  }
 }
 
 /* ===== EXPLORE LINK ===== */
