@@ -40,6 +40,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 0.35rem 1rem;
   z-index: 1000;
 }
@@ -52,6 +53,12 @@ nav a {
 
 nav a:hover {
   color: #007FFF;
+}
+
+.nav-logo {
+  height: 26px;
+  width: auto;
+  border-radius: 3px;
 }
 
 /* ===== HERO ===== */
@@ -157,6 +164,44 @@ h4 {
 .logo-link .section-logo {
   width: 100%;
   margin: 0;
+}
+
+.section-image-medium {
+  display: block;
+  width: min(100%, 750px);
+  margin: 1rem auto;
+}
+
+.partner-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 1.5rem auto;
+}
+
+.partner-logo-link {
+  display: block;
+  outline: none;
+}
+
+.partner-logo {
+  display: block;
+  height: 76px;
+  width: auto;
+  max-width: 100%;
+}
+
+.partner-logo-af {
+  height: 120px;
+  border-radius: 6px;
+}
+
+.partner-x {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #c8dcf5;
 }
 
 .drift-hero-media {
